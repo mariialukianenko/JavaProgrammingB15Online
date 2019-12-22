@@ -40,4 +40,6 @@ public class ArrayPracticeWithMethod {
         }
         System.out.println("Sum = "+sum);
     }
+
+    //public static void
 }
