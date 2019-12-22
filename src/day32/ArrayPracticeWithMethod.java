@@ -1,5 +1,6 @@
 package day32;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class ArrayPracticeWithMethod {
@@ -13,6 +14,8 @@ public class ArrayPracticeWithMethod {
         printMaxOfIntArray(new int[] {1, 3, 8, 5, 3});
 
         printSumOfIntArray(new int [] {1, 4, 5, 5, 5});
+
+        compare2arrays(new String[]{"hello", "jhfjg"}, new String[]{"fhjgggh"});
 
 
     }
@@ -41,5 +44,13 @@ public class ArrayPracticeWithMethod {
         System.out.println("Sum = "+sum);
     }
 
-    //public static void
+    public static void compare2arrays (String[] arr1, String[] arr2){
+        if (arr1.length > arr2.length) {
+            System.out.println("array 1 has more item.");
+        } else if (arr1.length < arr2.length) {
+            System.out.println("array 2 has more item.");
+        } else{
+            System.out.println("They have same item.");
+        }
+    }
 }
